@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .bio {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-link:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        .contact-section {
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+
+        .contact-section h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact-item span {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image">JD</div>
+            <h1>John Doe</h1>
+            <p class="tagline">Web Developer & Designer</p>
+            <p class="bio">
+                Passionate about creating beautiful and functional websites. 
+                Always learning and exploring new technologies.
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://twitter.com/yourusername" class="social-link" target="_blank">
+                <span class="social-icon">🐦</span>
+                <span>Twitter</span>
+            </a>
+            <a href="https://instagram.com/yourusername" class="social-link" target="_blank">
+                <span class="social-icon">📷</span>
+                <span>Instagram</span>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank">
+                <span class="social-icon">💼</span>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/yourusername" class="social-link" target="_blank">
+                <span class="social-icon">💻</span>
+                <span>GitHub</span>
+            </a>
+            <a href="https://youtube.com/@yourusername" class="social-link" target="_blank">
+                <span class="social-icon">📺</span>
+                <span>YouTube</span>
+            </a>
+            <a href="https://facebook.com/yourusername" class="social-link" target="_blank">
+                <span class="social-icon">📘</span>
+                <span>Facebook</span>
+            </a>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>your.email@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>City, State, Country</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
